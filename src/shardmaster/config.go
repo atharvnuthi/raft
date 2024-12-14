@@ -1,16 +1,18 @@
 package shardmaster
 
-import "labrpc"
-import "raft"
-import "testing"
-import "os"
+import (
+	"os"
+	"raft"
+	"raft/src/labrpc"
+	"testing"
 
-// import "log"
-import crand "crypto/rand"
-import "math/rand"
-import "encoding/base64"
-import "sync"
-import "runtime"
+	// import "log"
+	crand "crypto/rand"
+	"encoding/base64"
+	"math/rand"
+	"runtime"
+	"sync"
+)
 
 func randstring(n int) string {
 	b := make([]byte, 2*n)
